@@ -10,12 +10,12 @@
 <div class='logo'>
 <img src='/images/logo-rainmaker.jpg'>
 </div>
-<ul class='steps'><li class='current'>
-<a href='#step1'>Step 01</a>
-</li><li>
-<a href='#step2'>Step 02</a>
-</li><li>
-<a href='#step3'>Step 03</a>
+<ul class='steps'><li class='tab-step1 current'>
+<a>Step 01</a>
+</li><li class='tab-step2'>
+<a>Step 02</a>
+</li><li class='tab-step3'>
+<a>Step 03</a>
 </li></ul>
 </header>
 <div class='container'>
@@ -64,14 +64,6 @@ Date of Birth
 <input name='date-of-birth' type='date'>
 </label>
 <label>
-Email
-<input name='email' type='email'>
-</label>
-<label>
-Phone
-<input name='phone' type='tel'>
-</label>
-<label>
 Home Address
 <input name='address-line1' type='text'>
 <input name='address-line2' type='text'>
@@ -88,6 +80,22 @@ Job Title / Company
 How did you hear about us?
 <span>please specify any names or Rainmaker references</span>
 <input name='referral' type='text'>
+</label>
+<label>
+<input name='method-of-contact' type='radio' value='phone'>
+Contact me by phone
+<input name='phone' type='tel'>
+<label class='inner'>
+<input name='time-of-contact' type='radio' value='am'>
+AM
+<input checked='checked' name='time-of-contact' type='radio' value='pm'>
+PM
+</label>
+</label>
+<label>
+<input checked='checked' name='method-of-contact' type='radio' value='email'>
+Contact me by email
+<input name='email' type='email'>
 </label>
 </form>
 </fieldset>
@@ -182,10 +190,10 @@ School
 </label>
 </form>
 </fieldset>
-<div class='go-to-step two'>
-Next step
+<a class='go-to-step' href='#step2'>
+Go to Step 2 of 3
 <i class='fa fa-arrow-right'></i>
-</div>
+</a>
 </div>
 
 <div class='content' id='step2'>
@@ -374,14 +382,14 @@ Other
 </label>
 </form>
 </fieldset>
-<div class='go-to-step two'>
-Next step
+<a class='go-to-step' href='#step3'>
+Go to Step 3 of 3
 <i class='fa fa-arrow-right'></i>
-</div>
-<div class='go-to-step one back'>
+</a>
+<a class='go-to-step back' href='#step1'>
 <i class='fa fa-arrow-left'></i>
-Go Back
-</div>
+Back to Step 1 of 3
+</a>
 </div>
 
 <div class='content' id='step3'>
@@ -456,10 +464,10 @@ Great! We will send you an email with instructions for how to pay via direct Deb
 </label>
 </legend>
 </fieldset>
-<div class='go-to-step two back'>
+<a class='go-to-step back' href='#step2'>
 <i class='fa fa-arrow-left'></i>
-Go Back
-</div>
+Back to Step 2 of 3
+</a>
 </div>
 
 </div>
