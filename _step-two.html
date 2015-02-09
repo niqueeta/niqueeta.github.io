@@ -3,7 +3,7 @@
 <head>
 <meta charset='utf-8'>
 <title>The Rainmaker Foundation</title>
-<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+<link href="stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
 </head>
 <body class='_step-two'>
 <div class='content' id='step2'>
@@ -13,71 +13,70 @@ Which charity sectors are you interested in?
 <span>
 Select as many as you like!
 </span>
-</legend>
-<form><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='children-and-young-people'>
+</legend><div class='option'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='children'>
 <i class='fa fa-child'></i>
 <label>
 Children and Young People
 <span>
 <p></p>
-e.g. Transitional Support
+Initiatives supporting under-25s
 <br>
-Raising Aspirations
+Aspiration building
 <br>
-Extra-curricular Opportunites
+Extra-curricular support
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='climate-energy-and-environment'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='environment'>
 <i class='fa fa-tree'></i>
 <label>
-Climate, Energy &amp; Environment
+Environment &amp; Energy
 <span>
 <p></p>
-e.g. Climate Change
+Climate Change
 <br>
-Wildlife Conservation
+Conservation
 <br>
 Clean Energy
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='responsible-economic-development'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='economic-development'>
 <i class='fa fa-bank'></i>
 <label>
-Responsible Economic Development
+Sustainable Economic Development
 <span>
 <p></p>
-e.g. Social Enterprise
+Social Enterprise
 <br>
-Concious Trade
+Infrastructure
 <br>
-Sustainable Economic Growth
+Alternative Financial Models
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='global-health'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='health-care'>
 <i class='fa fa-stethoscope'></i>
 <label>
-Global Health
+Health Care
 <span>
 <p></p>
-e.g. Access to Care
-<br>
-Medical Training
+Access to Care
 <br>
 Medical Research
+<br>
+Practitioner Training
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='human-rights'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='human-rights'>
 <i class='fa fa-legal'></i>
 <label>
 Human Rights
 <span>
 <p></p>
-e.g. Peace and Reconciliation
+Peace and Reconciliation
 <br>
 Community Cohesion
 <br>
@@ -85,13 +84,13 @@ Social Justice
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='education'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='education'>
 <i class='fa fa-graduation-cap'></i>
 <label>
 Education
 <span>
 <p></p>
-e.g. Literacy and Numeracy
+Literacy and Numeracy
 <br>
 Access to Education
 <br>
@@ -99,35 +98,35 @@ Quality of Education
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='social-change'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='social-change'>
 <i class='fa fa-group'></i>
 <label>
 Social Change
 <span>
 <p></p>
-e.g. The Elderly
+Elderly
 <br>
-Women and girls
+Women and Girls
 <br>
-Homelessness
+Disability
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='media-arts-and-culture'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='media-arts-and-culture'>
 <i class='fa fa-paint-brush'></i>
 <label>
 Media, Arts &amp; Culture
 <span>
 <p></p>
-e.g. Cultural Heritage
+Widening Audiences
 <br>
-Development of Artists
+Freedom of Expression
 <br>
-Creation of Art
+Developing Young Artists
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='inspire-me'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='inspire-me'>
 <i class='fa fa-magic'></i>
 <label>
 Not sure, inspire me
@@ -137,7 +136,7 @@ Don't worry if you don't know, we're here to help you choose!
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='charity-sector-interests' type='checkbox' value='other'>
+<input class='option-checkbox' name='charity-sector-interests[]' type='checkbox' value='other'>
 <i class='fa fa-lightbulb-o'></i>
 <label>
 <input name='other-charity-sector' type='text'>
@@ -146,8 +145,7 @@ Don't worry if you don't know, we're here to help you choose!
 If we've missed something, just enter your preference here
 </span>
 </label>
-</div></form>
-</fieldset>
+</div></fieldset>
 <fieldset class='charities-involved'>
 <legend>
 Please share the names of any charities you are already involved with...
@@ -155,77 +153,70 @@ Please share the names of any charities you are already involved with...
 Optional
 </span>
 </legend>
-<form>
 <label>
 <input name='charities-already-involved-with' type='text'>
 </label>
-</form>
 </fieldset>
 <fieldset class='activites'>
 <legend>
 As a Rainmaker, what are you interested in?
 </legend>
-<form>
 <label>
-<input name='rainmaker-interests' type='checkbox' value='attending-events'>
+<input name='rainmaker-interests[]' type='checkbox' value='attending-events'>
 Attending events and meeting other Rainmakers
 </label>
 <label>
-<input name='rainmaker-interests' type='checkbox' value='growing-community'>
+<input name='rainmaker-interests[]' type='checkbox' value='growing-community'>
 Recruiting new Rainmakers into the community
 </label>
 <label>
-<input name='rainmaker-interests' type='checkbox' value='donating-to-charities'>
+<input name='rainmaker-interests[]' type='checkbox' value='donating-to-charities'>
 Financially supporting a charity
 </label>
 <label>
-<input name='rainmaker-interests' type='checkbox' value='opening-personal-account'>
+<input name='rainmaker-interests[]' type='checkbox' value='opening-personal-account'>
 Opening a personal charity account
 </label>
 <label>
-<input name='rainmaker-interests' type='checkbox' value='receiving-bespoke-advice'>
+<input name='rainmaker-interests[]' type='checkbox' value='receiving-bespoke-advice'>
 Receiving bespoke donor advice
 </label>
 <label>
-<input class='donating-time' name='rainmaker-interests' type='checkbox' value='donating-time'>
+<input class='donating-time' name='rainmaker-interests[]' type='checkbox' value='donating-time'>
 Volunteering my time
 </label>
-</form>
 </fieldset>
 <fieldset class='areas-of-expertise'>
 <legend>
 What are your areas of expertise?
 </legend>
-<form>
 <label>
-<input name='areas-of-expertise' type='checkbox' value='ceo'>
+<input name='areas-of-expertise[]' type='checkbox' value='ceo'>
 CEO
 </label>
 <label>
-<input name='areas-of-expertise' type='checkbox' value='accounting'>
+<input name='areas-of-expertise[]' type='checkbox' value='accounting'>
 Accounting
 </label>
 <label>
-<input name='areas-of-expertise' type='checkbox' value='hr'>
+<input name='areas-of-expertise[]' type='checkbox' value='hr'>
 HR
 </label>
 <label>
-<input name='areas-of-expertise' type='checkbox' value='legal'>
+<input name='areas-of-expertise[]' type='checkbox' value='legal'>
 Legal
 </label>
 <label>
-<input name='areas-of-expertise' type='checkbox' value='other'>
+<input name='areas-of-expertise[]' type='checkbox' value='other'>
 Other
 <input class='other' name='other-area-of-expertise' type='text'>
 </label>
-</form>
 </fieldset>
 <fieldset class='charity-sectors family'>
 <legend>
 What charity sectors is your partner interested in?
-</legend>
-<form><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='children-and-young-people'>
+</legend><div class='option'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='children'>
 <i class='fa fa-child'></i>
 <label>
 Children and Young People
@@ -239,7 +230,7 @@ Extra-curricular Opportunites
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='climate-energy-and-environment'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='environment'>
 <i class='fa fa-tree'></i>
 <label>
 Climate, Energy &amp; Environment
@@ -253,7 +244,7 @@ Clean Energy
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='responsible-economic-development'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='economic-development'>
 <i class='fa fa-bank'></i>
 <label>
 Responsible Economic Development
@@ -267,7 +258,7 @@ Sustainable Economic Growth
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='global-health'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='health-care'>
 <i class='fa fa-stethoscope'></i>
 <label>
 Global Health
@@ -281,7 +272,7 @@ Medical Research
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='human-rights'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='human-rights'>
 <i class='fa fa-legal'></i>
 <label>
 Human Rights
@@ -295,7 +286,7 @@ Social Justice
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='education'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='education'>
 <i class='fa fa-graduation-cap'></i>
 <label>
 Education
@@ -309,7 +300,7 @@ Quality of Education
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='social-change'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='social-change'>
 <i class='fa fa-group'></i>
 <label>
 Social Change
@@ -323,7 +314,7 @@ Homelessness
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='media-arts-and-culture'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='media-arts-and-culture'>
 <i class='fa fa-paint-brush'></i>
 <label>
 Media, Arts &amp; Culture
@@ -337,7 +328,7 @@ Creation of Art
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='inspire-me'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='inspire-me'>
 <i class='fa fa-magic'></i>
 <label>
 Not sure, inspire me
@@ -347,7 +338,7 @@ Don't worry if you don't know, we're here to help you choose!
 </span>
 </label>
 </div><div class='option'>
-<input class='option-checkbox' name='partner-charity-sector-interests' type='checkbox' value='other'>
+<input class='option-checkbox' name='partner-charity-sector-interests[]' type='checkbox' value='other'>
 <i class='fa fa-lightbulb-o'></i>
 <label>
 <input name='partner-other-charity-sector' type='text'>
@@ -356,77 +347,74 @@ Don't worry if you don't know, we're here to help you choose!
 If we've missed something, just enter your preference here
 </span>
 </label>
-</div></form>
-</fieldset>
+</div></fieldset>
 <fieldset class='family partner-interests'>
 <legend>
 As a Rainmaker, what is your partner most interested in?
 </legend>
-<form class='partner-interests'>
+<div class='partner-interests'>
 <label>
-<input name='partner-rainmaker-interests' type='checkbox' value='attending-events'>
+<input name='partner-rainmaker-interests[]' type='checkbox' value='attending-events'>
 Attending events and meeting other Rainmakers
 </label>
 <label>
-<input name='partner-rainmaker-interests' type='checkbox' value='growing-community'>
+<input name='partner-rainmaker-interests[]' type='checkbox' value='growing-community'>
 Recruiting new Rainmakers into the community
 </label>
 <label>
-<input name='partner-rainmaker-interests' type='checkbox' value='donating-to-charities'>
+<input name='partner-rainmaker-interests[]' type='checkbox' value='donating-to-charities'>
 Financially supporting a charity
 </label>
 <label>
-<input name='partner-rainmaker-interests' type='checkbox' value='opening-personal-account'>
+<input name='partner-rainmaker-interests[]' type='checkbox' value='opening-personal-account'>
 Opening a personal charity account
 </label>
 <label>
-<input name='partner-rainmaker-interests' type='checkbox' value='receiving-bespoke-advice'>
+<input name='partner-rainmaker-interests[]' type='checkbox' value='receiving-bespoke-advice'>
 Receiving bespoke donor advice
 </label>
 <label>
-<input class='donating-time' name='partner-rainmaker-interests' type='checkbox' value='donating-time'>
-Volunteering my time
+<input class='partner-donating-time' name='partner-rainmaker-interests[]' type='checkbox' value='donating-time'>
+Volunteering their time
 </label>
-</form>
+</div>
 </fieldset>
 <fieldset class='partner-areas-of-expertise'>
 <legend>
 What are your partner's areas of expertise?
 </legend>
-<form>
 <label>
-<input name='partner-areas-of-expertise' type='checkbox' value='ceo'>
+<input name='partner-areas-of-expertise[]' type='checkbox' value='ceo'>
 CEO
 </label>
 <label>
-<input name='partner-areas-of-expertise' type='checkbox' value='accounting'>
+<input name='partner-areas-of-expertise[]' type='checkbox' value='accounting'>
 Accounting
 </label>
 <label>
-<input name='partner-areas-of-expertise' type='checkbox' value='hr'>
+<input name='partner-areas-of-expertise[]' type='checkbox' value='hr'>
 HR
 </label>
 <label>
-<input name='partner-areas-of-expertise' type='checkbox' value='legal'>
+<input name='partner-areas-of-expertise[]' type='checkbox' value='legal'>
 Legal
 </label>
 <label>
-<input name='partner-areas-of-expertise' type='checkbox' value='other'>
+<input name='partner-areas-of-expertise[]' type='checkbox' value='other'>
 Other
 <input class='other' name='partner-other-area-of-expertise' type='text'>
 </label>
-</form>
 </fieldset>
 <a class='go-to-step' href='#step3'>
-Go to final Step
+Go to final step
 <i class='fa fa-arrow-right'></i>
 </a>
 <a class='go-to-step back' href='#step1'>
 <i class='fa fa-arrow-left'></i>
-Back to Step 1/3
+Back to step 1/3
 </a>
 </div>
 
-<script src="/javascripts/all.js" type="text/javascript"></script>
+<script src="javascripts/all.js" type="text/javascript"></script>
 </body>
 </html>
