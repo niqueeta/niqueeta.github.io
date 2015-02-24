@@ -47,7 +47,7 @@ Personal Details
 </legend>
 <label>
 Name
-<input id='your-name' name='name' type='text'>
+<input data-validation-error-msg='Please enter your name.' data-validation-length='1,100' data-validation='length' id='your-name' name='name' type='text'>
 </label>
 <label>
 Date of Birth
@@ -55,12 +55,12 @@ Date of Birth
 </label>
 <label>
 Home Address
-<input name='address-line1' type='text'>
+<input data-validation-error-msg='Please enter the first line of your address.' data-validation-length='1,100' data-validation='length' name='address-line1' type='text'>
 <input name='address-line2' type='text'>
 </label>
 <label>
 Postcode
-<input name='postcode' type='text'>
+<input data-validation-error-msg='Please enter your postcode.' data-validation-length='3,10' data-validation='length' name='postcode' type='text'>
 </label>
 <label>
 Job Title / Company
